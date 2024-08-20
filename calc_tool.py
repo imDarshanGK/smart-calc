@@ -1,3 +1,6 @@
+print("Welcome to the Python Calculator!")
+print("You can perform addition (+), subtraction (-), multiplication (*), and division (/).")
+
 import os
 def addition(a,b):
     return a+b
