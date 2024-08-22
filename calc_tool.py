@@ -1,6 +1,5 @@
 print("Welcome to the Python Calculator!")
-print("You can perform addition (+), subtraction (-), multiplication (*), and division (/).")
-
+print("You can perform addition (+), subtraction (-), multiplication (*), division (/), modulus (%), exponentiation (**), and floor division (//).")
 import os
 def addition(a,b):
     return a+b
@@ -10,12 +9,21 @@ def multiplication(a,b):
     return a*b
 def division(a,b):
     return a/b
+def modulus(a,b):
+    return a%b
+def exponentiation(a,b):
+    return a**b
+def floor_division(a,b):
+    return a//b
 
 operations_dict = {
     "+":addition,
     "-":subtraction,
     "*":multiplication,
-    "/":division
+    "/":division,
+    "%":modulus,
+    "**":exponentiation,
+    "//":floor_division
 }
 
 def calculator():
